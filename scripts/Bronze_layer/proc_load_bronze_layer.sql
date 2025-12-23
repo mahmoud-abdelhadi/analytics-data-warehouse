@@ -81,7 +81,7 @@ begin
             fieldterminator = ','
         );
         set @end_time = GETDATE()
-        print'the load duration ' + cast(DATEDIFF(second,@start_time,@end_time) as nvarchar) + ' Seconds'
+        print'The load duration ' + cast(DATEDIFF(second,@start_time,@end_time) as nvarchar) + ' Seconds'
     end try
     begin catch
         print'--------------------------------------------'
